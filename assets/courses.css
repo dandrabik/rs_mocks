@@ -1,0 +1,319 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  background-color: white;
+}
+.js-hide {
+  display:none;
+}
+.course-info {
+  display: block;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.course-description {
+  position: relative;
+  border: 5px solid yellow;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2em;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.course-description .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+.js-course-description {
+  display: none;
+}
+a.js-course:hover .js-course-description {
+  display: block;
+}
+
+a.js-course:hover {
+  text-decoration: none;
+}
+
+a.js-course:hover .card-title {
+  color: #4183c4;
+}
+
+.navbar {
+  margin-top: 0px;
+}
+
+.bg-rs-blue { background-color: #1D3663 }
+.bg-white { background-color: white; }
+.bg-gray { background-color: #ecf0f1 }
+.rs-blue { color: #1D3663; }
+.dark-gray { color: #656565 }
+.white { color: #fff }
+.dark-white { color: #ecf0f1 }
+.yellow {color: #f4f142;}
+a.white {color: white;}
+a.white:hover {color: #ecf0f1;}
+a.no-underline:hover {text-decoration: none;}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+.carousel-caption h2 {
+  text-shadow: 2px 2px black;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+.carousel-text-box {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.featured-tag {
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+.featured-subhead {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/*Tab section*/
+.tab-header {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.tab-subheader {
+  text-align: center;
+  font-size: 22px;
+}
+#myTab .nav-item {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+#myTab a.nav-link.active {
+  color: #007bff;
+}
+#myTab a.nav-link {
+  color: #1D3663;
+}
+
+.tab-content {
+  background-color: #fff;
+  height: 500px;
+}
+
+.tab-pane-intro {
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* card-rs */
+.card-list-path .slick-list {
+  margin: 0 2vw;
+  float: left;
+}
+.card-list .slick-list{
+  margin: 0 2vw;
+  float: left;
+}
+.slick-slider {
+  margin: 30px auto;
+}
+.slick-disabled.arrow {
+  background-color: white;
+  color: white;
+}
+
+/*card sizes*/
+.arrow {
+  border-radius: 50px;
+  background-color: #ecf0f1;
+  text-align: center;
+}
+
+.card-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 1.1em;
+}
+.course-no {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  border: 2px solid #656565;
+  border-radius: 100px;
+  height: 2.8vw;
+  width: 2.8vw;
+  min-width: 25px;
+  min-height: 25px;
+  padding-top: 0.2vw;
+  font-size: calc(12px + 0.5vw);
+}
+.more-info {
+  color: white;
+  font-size: calc(14px + 0.2vw);
+  text-align: center;
+  padding-top: 25%;
+}
+.card-section-header{
+  margin: 10px 0 5px
+}
+.card-section-subtitle{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: calc(14px + 0.2vw);
+}
+
+/* slide section sizing */
+
+.card-list .slick-list{ width: 76vw; }
+/* Showing 4 slides*/
+.card-list .course-info {
+  max-width: 1024px;
+  height: 12vw;
+}
+.card-list-path .slick-list {
+  width: 65vw;
+  max-width: 920px;
+}
+.card-list-path .course-info {height: 12vw;}
+/* slide dynamic sizing */
+
+.card-title { height: 50px; }
+.arrow{
+  font-size: calc(12px + 0.5vw);
+  padding-top: 1vw;
+  margin-top: 6vw;
+  height: 3vw;
+  width: 3vw;
+  min-width: 22px;
+  min-height: 22px;
+}
+/* modal for touch screens*/
+.modal {
+  width: 100%;
+}
+.modal-course-image {
+  width: 100%;
+  height: 50vw;
+  max-height: 300px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* Bump up size of carousel content */
+.carousel-caption p {
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.lg-show { display: block;}
+.lg-hide { display: none; }
+
+@media (max-width: 575.98px) {
+  /*utility*/
+  .sm-show { display: block;}
+  .sm-hide { display: none; }
+  .md-show {display: none;}
+  .lg-show { display: none; }
+  p { color: red; }
+
+  /*carousel*/
+  .carousel-item {
+    height: 16rem;
+  }
+  .carousel-item > img {
+    height: 16rem;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .featured-tag {
+    font-size: 12px;
+  }
+  /* tabs */
+  .tab-header { font-size: 30px; }
+  .tab-subheader { font-size: 16px; }
+
+  .card-list .course-info {height: 20vw;}
+  /* slide dynamic sizing */
+
+  .tab-pane-intro {
+    font-size: 20px;
+    line-height: 1.1em;
+  }
+  .tab-content {
+    height: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .md-show {display: block;}
+  .md-hide { display: none; }
+  .lg-show {display: none;}
+  .lg-hide {display: block;}
+
+  /*carousel*/
+  .carousel-item {
+    height: 16rem;
+  }
+  .carousel-item > img {
+    height: 16rem;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .featured-tag {
+    font-size: 12px;
+  }
+  /* tabs */
+  .tab-header { font-size: 30px; }
+  .tab-subheader { font-size: 16px; }
+  #myTab .nav-item {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    }
+
+  /* slide dynamic sizing */
+  .card-list-path .course-info {height: 18vw;}
+  .tab-pane-intro {
+    font-size: 20px;
+    line-height: 1.1em;
+  }
+  .tab-content {
+    height: 400px;
+  }
+}
