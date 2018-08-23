@@ -16,6 +16,7 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .course-description {
   position: relative;
@@ -175,10 +176,10 @@ a.no-underline:hover {text-decoration: none;}
   border-radius: 100px;
   height: 2.8vw;
   width: 2.8vw;
-  min-width: 25px;
-  min-height: 25px;
-  padding-top: 0.2vw;
-  font-size: calc(12px + 0.5vw);
+  min-width: 35px;
+  min-height: 35px;
+  padding-top: 0.3vw;
+  font-size: calc(18px + 0.2vw);
 }
 .more-info {
   color: white;
@@ -197,15 +198,16 @@ a.no-underline:hover {text-decoration: none;}
 
 /* slide section sizing */
 
-.card-list .slick-list{ width: 76vw; }
-/* Showing 4 slides*/
-.card-list .course-info {
-  max-width: 1024px;
-  height: 12vw;
+.card-list .slick-list{
+  width: 76vw;
 }
+/* Showing 4 slides*/
+
+.card-list .course-info {height: 12vw;}
 .card-list-path .slick-list {
   width: 69vw;
   max-width: 920px;
+  margin: 0 auto;
 }
 .card-list-path .course-info {height: 12vw;}
 /* slide dynamic sizing */
@@ -266,12 +268,20 @@ a.no-underline:hover {text-decoration: none;}
   /* tabs */
   .tab-header { font-size: 30px; }
   .tab-subheader { font-size: 16px; }
-
-  .card-list .course-info {height: 20vw;}
+  .card-list-path .course-info {height: 30vw;}
+  .card-list-path .slick-list {
+    width: 90vw;
+    padding: 0 6vw;
+  }
+  .card-list .slick-list{
+    width: 90vw;
+    padding: 0 6vw 0 0;
+  }
+  .card-list .course-info {height: 30vw;}
   /* slide dynamic sizing */
 
   .tab-pane-intro {
-    font-size: 20px;
+    font-size: 1px;
     line-height: 1.1em;
   }
 }
@@ -304,9 +314,8 @@ a.no-underline:hover {text-decoration: none;}
     }
 
   /* slide dynamic sizing */
-  .card-list-path .course-info {height: 18vw;}
   .tab-pane-intro {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.1em;
   }
 }
