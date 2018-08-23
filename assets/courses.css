@@ -139,7 +139,7 @@ a.no-underline:hover {text-decoration: none;}
 
 /* card-rs */
 .card-list-path .slick-list {
-  margin: 0 2vw;
+  margin: 1vw 2vw;
   float: left;
 }
 .card-list .slick-list{
@@ -147,7 +147,7 @@ a.no-underline:hover {text-decoration: none;}
   float: left;
 }
 .slick-slider {
-  margin: 3vw auto;
+  margin: 0 auto;
 }
 .slick-disabled.arrow {
   background-color: white;
@@ -189,10 +189,6 @@ a.no-underline:hover {text-decoration: none;}
 /*hide view details on touch devices*/
 .js-touch-detected .more-info {
   display: none;
-}
-
-.card-section-subtitle{
-  font-size: 1.1rem;
 }
 
 .card-title {
