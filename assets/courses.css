@@ -126,7 +126,6 @@ a.no-underline:hover {text-decoration: none;}
 
 .tab-content {
   background-color: #fff;
-  height: 500px;
 }
 
 .tab-pane-intro {
@@ -144,7 +143,7 @@ a.no-underline:hover {text-decoration: none;}
   float: left;
 }
 .slick-slider {
-  margin: 30px auto;
+  margin: 3vw auto;
 }
 .slick-disabled.arrow {
   background-color: white;
@@ -183,12 +182,13 @@ a.no-underline:hover {text-decoration: none;}
   text-align: center;
   padding-top: 25%;
 }
-.card-section-header{
-  margin: 10px 0 5px
+/*hide view details on touch devices*/
+.js-touch-detected .more-info {
+  display: none;
 }
+
 .card-section-subtitle{
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .card-title {
@@ -204,7 +204,7 @@ a.no-underline:hover {text-decoration: none;}
   height: 12vw;
 }
 .card-list-path .slick-list {
-  width: 65vw;
+  width: 69vw;
   max-width: 920px;
 }
 .card-list-path .course-info {height: 12vw;}
@@ -249,7 +249,6 @@ a.no-underline:hover {text-decoration: none;}
   .sm-hide { display: none; }
   .md-show {display: none;}
   .lg-show { display: none; }
-  p { color: red; }
 
   /*carousel*/
   .carousel-item {
@@ -274,9 +273,6 @@ a.no-underline:hover {text-decoration: none;}
   .tab-pane-intro {
     font-size: 20px;
     line-height: 1.1em;
-  }
-  .tab-content {
-    height: 400px;
   }
 }
 
@@ -312,8 +308,5 @@ a.no-underline:hover {text-decoration: none;}
   .tab-pane-intro {
     font-size: 20px;
     line-height: 1.1em;
-  }
-  .tab-content {
-    height: 400px;
   }
 }
