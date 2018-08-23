@@ -40,6 +40,10 @@ body {
 a.js-course:hover .js-course-description {
   display: block;
 }
+/* hide highlight on touch devices*/
+.js-touch-detected a.js-course:hover .js-course-description {
+  display: none;
+}
 
 a.js-course:hover {
   text-decoration: none;
